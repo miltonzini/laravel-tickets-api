@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Requests;
 
 use Illuminate\Contracts\Validation\ValidationRule;
@@ -23,8 +22,17 @@ class ApiLoginRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email' => ['required'],
-            'password' => ['required']
+            'email'    => ['required', 'email'],
+            'password' => ['required'],
+        ];
+    }
+
+    public function messages(): array
+    {
+        return [
+            'email.required' => 'El email es obligatorio.',
+            'email.email'    => 'El formato del email no es válido.',
+            'password.required' => 'La contraseña es obligatoria.',
         ];
     }
 }
