@@ -18,8 +18,8 @@ REST API desarrollada en **Laravel** para la gestión de tareas internas. Permit
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/tu-repo.git
-cd tu-repo
+git clone https://github.com/miltonzini/laravel-tickets-api.git
+cd larave-tickets-api
 
 # 2. Instalar dependencias
 composer install
@@ -29,7 +29,7 @@ cp .env.example .env
 php artisan key:generate
 
 # 4. Configurar la base de datos en .env
-DB_DATABASE=nombre_db
+DB_DATABASE=laravel_tickets_api
 DB_USERNAME=root
 DB_PASSWORD=
 
@@ -125,4 +125,4 @@ routes/
 
 ## 👤 Autor
 
-Desarrollado como proyecto de práctica para el aprendizaje de **REST APIs con Laravel**.
+Desarrollado como proyecto de práctica.
