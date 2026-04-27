@@ -29,8 +29,15 @@ class AuthController extends Controller
             'token' => $token,
         ]);
     }
+
+    public function logout() {
+        auth()->user()->tokens()->delete();
+        return $this->ok('Token revocado correctamente.');
+    }
+
     public function register()
     {
+        // TODO: 
         return $this->ok('register');
     }
 }

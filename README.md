@@ -114,7 +114,7 @@ routes/
 
 - [x] Setup del proyecto
 - [x] Diseño de URLs y versionado (`/api/v1/`)
-- [ ] Autenticación con Sanctum
+- [x] Autenticación con Sanctum
 - [ ] Diseño de response payloads
 - [ ] Filtros y sorting
 - [ ] CRUD completo de tickets
